@@ -20,6 +20,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          dockerfile: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/my-app-image:latest
 
